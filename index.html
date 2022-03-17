@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/0825288af7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-top">
+        <div class="header-top_content">
+            <div class="bar-group">
+                <div>Currencies <span class="text-value">10132</span></div>
+                <div class="gas">
+                    <div>
+                        Market Cap
+                    </div>
+                    <div class="text-value">$ 2.75T<span class="down">-1.98%</span></div> 
+                </div>
+                <div class="gas">
+                    <div>
+                        24h Spot Volumne
+                    </div>
+                     <div class="text-value">$ 2.75T <span class="up">+1.98%</span></div> 
+                    </div>
+                <div class="gas">
+                    <diV>
+                        BTC Dominance
+                    </diV>  <div class="text-value">42.78% <span class="up">+1.98%</span></div> 
+                </div>
+                <div class="gas">
+                    <div class="gas-name"><i class="fas fa-gas-pump"></i>ETH Gas</div>
+                    <div class="gas-value">
+                        <div class="text-value">189 Gwei <i class="fas fa-sort-down"></i></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="languages">
+                <img src="asset/images/usa.svg" width="16px" height="16px">
+                <span>English <i class="fas fa-sort-down"></i></span>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <div class="header_content">
+                <div class="header_logo">
+                    <a href="">CRYPTORANK</a>
+                </div>
+            </div>
+            <div class="header_menu">
+                <div class="menu">
+                    <ul class="header_menu_menu">
+                        <li><a href="">Currencies</a>
+                            <div class="header_menu_submenu">
+                                <div class="container_submenu">
+                                    <div class="submenu screeners">
+                                        <div><strong>Screeners</strong> </div>
+                                        <div class="submenu_item">
+                                            <a href="">Overview</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                        </div>
+                                    </div>
+                                    <div class="submenu watchlist" >
+                                        <div><strong>Watchlist</strong> </div>
+                                        <div class="submenu_item">
+                                            <a href="">DeFi Tokens</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                            <a href="">Top 100 coin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li><a href="">IDO/IEO</a></li>
+                        <li><a href="">DeFi</a></li>
+                        <li><a href="">Derivatives</a></li>
+                        <li><a href="">Exchanges</a></li>
+                        <li><a href="">Maps</a></li>
+                        <li><a href="">Alerts</a></li>
+                        <li><a href="">Watchlist</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Tools</a></li>
+                        
+                    </ul>
+                    <div>
+                        <div><a href="">Sign In</a></div>
+                    </div>
+                </div>
+                <button class="navbar-collapse">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            
+        </div>
+    </header>
+    <div class="container_fluid">
+        <div class="main_content">
+            <section class="overview">
+                <div class="overview_header">
+                    <div class="title">
+                        <h3>Crypto Market Insights And Analytics</h3>
+                        <p>TOP CryptoCurrencies Price List by Market Capitalization.More...</p>
+                    </div>
+                    <div class="search">
+                        <form action="" id="formSearch">
+                            <input type="text" placeholder="Search for Coins, Tokens, IDO/IEO/ICOs">
+                            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="overview_menu">
+                    <ul>
+                        <li><a href="" class="active">Overview</a></li>
+                        <li><a href="">Performance</a></li>
+                        <li><a href="">ATH</a></li>
+                        <li><a href="">Gainers</a></li>
+                        <li><a href="">Losers</a></li>
+                        <li><a href="">IDO/IEO/ICO ROI</a></li>
+                        <li><a href="">All Categories</a></li>
+                    </ul>
+                    <button class="btn_key">Get Your API Key Now</button>
+                </div>
+                <div>
+                    <div class="overview_filter">
+                        <div class="filter" style="display: flex;">
+                            <form action="" id="formFilter">
+                                <input type="text" placeholder="Filter coin...">
+                                <button type="submit" class="filter-btn"><i class="fas fa-search"></i></button>
+                            </form>
+                            <button class=""><i class="fas fa-filter"></i> Filters</button>
+                            <button id="layout">Layout</button>
+                        </div>
+                        <div aria-label="Page navigation example" class="pagination-page">
+                            <ul class="pagination">
+                              
+                              <li class="page-item"><a class="page-link disabled" href="#"><i class="fas fa-chevron-left"></i></a></li>
+                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
+                              <li class="page-item"><a class="page-link" href="#">View All</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="overview_table">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Change (24h)</th>
+                            <th>Market Cap</th>
+                            <th>Volume (24h)</th>
+                            <th>Circ. Supply</th>
+                            <th>Price Graph (7d)</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="asset/images/bitcoin.png" width="16px" height="16px" alt="">
+                                <span>Bitcoin (BTC)</span>
+                            </td>
+                            <td>$61,931</td>
+                            <td class="menu-top_number_up">+1.13%</td>
+                            <td>$ 1,167,611,144,495</td>
+                            <td>$ 11,916,423,907</td>
+                            <td>Ƀ 18,853,400</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>	
+                                <img src="asset/images/eth.png" width="16px" height="16px" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>	
+                                <img src="asset/images/binance-coin.png" width="16px" height="16px" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>	
+                                <img src="asset/images/usdt.png" with="16px" height="16px" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>	
+                                <img src="asset/images/ada.png" with="16px" height="16px" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>	
+                                <img src="asset/images/sol.png" with="16px" height="16px" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>	
+                                <img src="asset/images/XRP.jpg" with="16px" height="16px" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>	
+                                <img src="" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>	
+                                <img src="" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>	
+                                <img src="" alt="">
+                                <span> Ethereum (ETH)</span></td>
+                            <td>$ 4,130</td>
+                            <td class="menu-top_number_down">-0.25%</td>
+                            <td>$ 487,567,128,218</td>
+                            <td>$ 6,804,179,163</td>
+                            <td>ETH 118,065,266</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </section>
+            <section class="overview_table_top">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="table_top table-responsive">
+                            <table class="table top" id="gainers">
+                                <caption style="caption-side:top">Top Gainers</caption>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Chg</th>
+                                    <th>Vol24</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                            </table>
+                            <table class="table" id="losers">
+                                <caption style="caption-side:top">Top Losers</caption>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Chg</th>
+                                    <th>Vol24</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div class="table_new">
+                            <table class="table" id="gainers">
+                                <caption style="caption-side:top">New High (ATH)</caption>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Chg</th>
+                                    <th>Vol24</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                            </table>
+                            <table class="table" id="losers">
+                                <caption style="caption-side:top">New Low (ATL)</caption>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Chg</th>
+                                    <th>Vol24</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table_most">
+                            <table class="table" id="gainers">
+                                <caption style="caption-side:top">Most Volatile</caption>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Chg</th>
+                                    <th>Vol24</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                            </table>
+                            <table class="table" id="losers">
+                                <caption style="caption-side:top">Unusual Volume</caption>
+                                <tr>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Chg</th>
+                                    <th>Vol24</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>GMR</span>
+                                    </td>
+                                    <td>$ 1.90e-7</td>
+                                    <td>+216.7%</td>
+                                    <td>$ 11,036,561</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <aside>
+        
+                        </aside>
+                    </div>
+                </div>
+                
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Current Returns since IEO (ROI) by Exchange Platforms</p>
+                    </div>
+                    <div class="col-6">
+                        <p>Average return of ICOs by sector</p>
+                        <div class="table-responsive">
+                            <table class="table" style="white-space: nowrap;">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Raise Goal</th>
+                                    <th>Initial Cap</th>
+                                    <th>TGE Platform</th>
+                                    <th>When</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/Clearpool.jpeg" width="16px" height="16px" alt="">
+                                        <span>Clearpool (CPOOL)</span>
+                                    </td>
+                                    <td>$ 100,000</td>
+                                    <td>$ 1.55M</td>
+                                    <td>
+                                        <img src="" alt="">
+                                        <span>DAO Maker</span>
+                                    </td>
+                                    <td>26 Oct</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="overview-btc">
+                <div class="row">
+                    <div class="col-4">
+                        <p>24h BTC Futures Volumes</p>
+                    </div>
+                    <div class="col-4">
+                        <p>BTC Futures Open Interest</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Market News Aggregator</p>
+                        <div class="overview-btc_new">
+                            <div class="content-new">
+                                <p class="new_title">CME Bitcoin Futures Open Interest Up 265% In October, BTC’s Next Test at $90,000</p>
+                                <div class="date">
+                                    <span><i class="far fa-clock"></i> 26 minutes ago </span><span> Coingape</span>
+                                    <div>
+                                        <button>BTC</button>
+                                        <button>NET</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-new">
+                                <p class="new_title">CME Bitcoin Futures Open Interest Up 265% In October, BTC’s Next Test at $90,000</p>
+                                <div class="date">
+                                    <span><i class="far fa-clock"></i> 26 minutes ago </span><span> Coingape</span>
+                                    <div>
+                                        <button>BTC</button>
+                                        <button>NET</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-new">
+                                <p class="new_title">CME Bitcoin Futures Open Interest Up 265% In October, BTC’s Next Test at $90,000</p>
+                                <div class="date">
+                                    <span><i class="far fa-clock"></i> 26 minutes ago </span><span> Coingape</span>
+                                    <div>
+                                        <button>BTC</button>
+                                        <button>NET</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-new">
+                                <p class="new_title">CME Bitcoin Futures Open Interest Up 265% In October, BTC’s Next Test at $90,000</p>
+                                <div class="date">
+                                    <span><i class="far fa-clock"></i> 26 minutes ago </span><span> Coingape</span>
+                                    <div>
+                                        <button>BTC</button>
+                                        <button>NET</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-new">
+                                <p class="new_title">CME Bitcoin Futures Open Interest Up 265% In October, BTC’s Next Test at $90,000</p>
+                                <div class="date">
+                                    <span><i class="far fa-clock"></i> 26 minutes ago </span><span> Coingape</span>
+                                    <div>
+                                        <button>BTC</button>
+                                        <button>NET</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-new">
+                                <p class="new_title">CME Bitcoin Futures Open Interest Up 265% In October, BTC’s Next Test at $90,000</p>
+                                <div class="date">
+                                    <span><i class="far fa-clock"></i> 26 minutes ago </span><span> Coingape</span>
+                                    <div>
+                                        <button>BTC</button>
+                                        <button>NET</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-new">
+                                <p class="new_title">CME Bitcoin Futures Open Interest Up 265% In October, BTC’s Next Test at $90,000</p>
+                                <div class="date">
+                                    <span><i class="far fa-clock"></i> 26 minutes ago </span><span> Coingape</span>
+                                    <div>
+                                        <button>BTC</button>
+                                        <button>NET</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <div><a href="">CryptoRank</a> >  Average IEO</div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_content">
+            <div class="menu_content">
+                <div class="info">
+                    <div>
+                        <div class="info_name">Follow Us <span><i class="fas fa-angle-down"></i></span></div>
+                        <div class="info_item">
+                            <div><a href=""><i class="fab fa-twitter"></i> Twitter</a></div>
+                            <div><a href=""><i class="fab fa-medium"></i> Medium</a></div>
+                            <div><a href=""><i class="fab fa-telegram-plane"></i> Telegram News</a></div>
+                            <div><a href=""><i class="fab fa-telegram-plane"></i> Telegram chat(en)</a></div>
+                            <div><a href="">Telegram chat(ru)</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info_name">Products <span><i class="fas fa-angle-down"></i></span></div>
+                        <div class="info_item">
+                            <div><a href="">IDO Platforms</a></div>
+                            <div><a href="">DEX Trade Viewer</a></div>
+                            <div><a href="">Exchanges</a></div>
+                            <div><a href="">Alerts</a></div>
+                            <div><a href="">Watchlist</a></div>
+                            <div><a href="">Converter</a></div>
+                            <div><a href="">News Aggregator</a></div>
+                            <div><a href="">Widgets</a></div>
+                            <div><a href="">Market Data API</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info_name">Analytics <span><i class="fas fa-angle-down"></i></span></div>
+                        <div class="info_item">
+                            <div><a href="">IDO Platform ROI</a></div>
+                            <div><a href="">IDO/IEO/ICO ROI Stats</a></div>
+                            <div><a href="">IEO ROI by Platform</a></div>
+                            <div><a href="">AVG ROI by Sector</a></div>
+                            <div><a href="">Heat Maps</a></div>
+                            <div><a href="">DerivativesIDO Platforms</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info_name">Contact Us <span><i class="fas fa-angle-down"></i></span></div>
+                        <div class="info_item"> 
+                            <div><a href="">List your ICO</a></div>
+                            <div><a href="">List your Token</a></div>
+                            <div><a href="">List your Exchange</a></div>
+                            <div><a href="">Other questionsIDO</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_data">
+                    <div style="margin-bottom: 1rem;">Market Data API</div>
+                    <div>
+                        <p>Your API key for all crypto use cases</p>
+                        <div>
+                            <button>Get Your API Key Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_crypto">
+                <div class="info_crypto">
+                    <div class="crypto">
+                        <h3>crypyorank</h3>
+                        <div>CryptoRank provides crowdsourced and professionally curated research, price analysis, and crypto market-moving news to help market players make more informed trading decisions. If you’re looking for a set of practical and insightful crypto market information and data, we have the analytics tools to suit your business needs.</div>
+                    </div>
+                    <div class="copyright">
+                        <div>©CryptoRank, LLC 2017-2021 | All trademarks and copyrights are the property of their respective owners</div>
+                        <div>Terms and Conditions <span> | </span>Privacy Policy <span>|</span> Sitemap</div>
+                    </div>
+                </div>
+                <p>RISK DISCLAIMER: The information contained on this website is not investment advice. Trading financial instruments carry a high level of risk and one for which we strongly advise you to consult with your registered investor advisor.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

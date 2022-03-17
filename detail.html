@@ -1,0 +1,649 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="https://kit.fontawesome.com/0825288af7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="asset/js/chart_ieo.js"></script>
+</head>
+<body>
+    <div class="header-top">
+        <div class="header-top_content">
+            <div class="bar-group">
+                <div>Currencies <span class="text-value">10132</span></div>
+                <div class="gas">
+                    <div>
+                        Market Cap
+                    </div>
+                    <div class="text-value">$ 2.75T<span class="down">-1.98%</span></div> 
+                </div>
+                <div class="gas">
+                    <div>
+                        24h Spot Volumne
+                    </div>
+                     <div class="text-value">$ 2.75T <span class="up">+1.98%</span></div> 
+                    </div>
+                <div class="gas">
+                    <diV>
+                        BTC Dominance
+                    </diV>  <div class="text-value">42.78% <span class="up">+1.98%</span></div> 
+                </div>
+                <div class="gas">
+                    <div class="gas-name"><i class="fas fa-gas-pump"></i>ETH Gas</div>
+                    <div class="gas-value">
+                        <div class="text-value">189 Gwei <i class="fas fa-sort-down"></i></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="languages">
+                <img src="asset/images/usa.svg" width="16px" height="16px">
+                <span>English <i class="fas fa-sort-down"></i></span>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <div class="header_content">
+                <div class="header_logo">
+                    <a href="">CRYPTORANK</a>
+                </div>
+            </div>
+            <div class="header_menu">
+                <div>
+                    <div class="menu">
+                   
+                        <ul class="header_menu_menu">
+                            <li><a href="">Currencies</a>
+                                <div class="header_menu_submenu">
+                                    <div class="container_submenu">
+                                        <div class="submenu screeners">
+                                            <div><strong>Screeners</strong> </div>
+                                            <div class="submenu_item">
+                                                <a href="">Overview</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                            </div>
+                                        </div>
+                                        <div class="submenu watchlist" >
+                                            <div><strong>Watchlist</strong> </div>
+                                            <div class="submenu_item">
+                                                <a href="">DeFi Tokens</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                                <a href="">Top 100 coin</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li><a href="">IDO/IEO</a></li>
+                            <li><a href="">DeFi</a></li>
+                            <li><a href="">Derivatives</a></li>
+                            <li><a href="">Exchanges</a></li>
+                            <li><a href="">Maps</a></li>
+                            <li><a href="">Alerts</a></li>
+                            <li><a href="">Watchlist</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Tools</a></li>
+                            
+                        </ul>
+                        <!-- <div>
+                            <div><a href="">Sign In</a></div>
+                        </div> -->
+                    </div>
+                    
+                    <button class="navbar-collapse">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <div class="container-respon" style="position: relative;">
+            <div class="back"></div>
+            <div class="menu_responsive">
+                <div class="mobile_menu">
+                    <button class="close"><i class="fas fa-times"></i></button>
+                    <div>
+                        <div class="container_menu">
+                            <div class="menu_item current">
+                                <div>Currencies</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="sub_menu first">
+                                <div>
+                                    <div class="dropdown_title"><strong>Screeners</strong> </div>
+                                    <a href="">- Overview</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown_title"><strong>Watchlist</strong> </div>
+                                    <a href="">- Overview</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                    <a href="">- Top 100 coin</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item ido-ieo">
+                                <div>IDO/IEO</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="sub_menu secornd">
+                                <div>
+                                    <a href="">- Upcoming</a>
+                                    <a href="">- Active</a>
+                                    <a href="">- Past IDO/IEO/ICOs</a>
+                                    <a href="">- IDO Platform</a>
+                                    <a href="">- IDO Platform ROI</a>
+                                    <a href="">- IEO Platform ROI</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item">
+                                <div>DeFi</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item">
+                                <div>Derivatives</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item">
+                                <div>Exchanges</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item">
+                                <div>Maps</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item">
+                                <div>Alerts</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item">
+                                <div>Watchlist</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item">
+                                <div>News</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="container_menu">
+                            <div class="menu_item">
+                                <div>Tools</div>
+                                <div class="dropdown"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container_fluid">
+        <div class="main_content">
+            <div class="search">
+                <form action="" id="formSearch">
+                    <input type="text" placeholder="Search for Coins, Tokens, IDO/IEO/ICOs, Exchanges, ETFs...">
+                    <button style="top:10px" type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="title">
+                <img src="asset/images/zelwin.png" alt="">
+                <div class="logo-zelwin"><strong>Zelwin </strong></div>
+                <div class="stake">- Stake with ZLW today -</div>
+                <div class="up-to"><a href="">up to 129% apy </a></div>
+                <div><i class="fas fa-ad"></i></div>
+            </div>
+            <div class="page-content">
+                <div class="coin-header">
+                    <div class="coin-header_coin">
+                        <div class="coin">
+                            <div class="coin-logo">
+                                <img src="asset/images/amasa.jpg" alt="">
+                            </div>
+                            <div class="coin-name">
+                                <div class="coin-info">
+                                    <h2>Amasa
+                                        <span class="text-amas">[AMAS]</span>
+                                    </h2>
+                                    <button class="add-star"><i class="far fa-star"></i></button>
+                                    <div class="coin-watchlist">On 2 watchlist</div>
+                                </div>
+                                <div class="coin-label">
+                                    <div class="label-token label">
+                                        token:
+                                    </div>
+                                    <a href="" class="label-token label">ETHEREUM</a>
+                                    <a href="" class="label-token label">POLYGON</a>
+                                    <a href="" class="label-token label">DEFI</a>
+                                    <a href="" class="label-token1 label">trustpad</a>
+                                    <a href="" class="label-token1 label">spark digital captial</a>
+                                    <a href="" class="label-token1 label">LD captial</a>
+                                    <button>view all</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="coin-value">
+                            <div class="value">
+                                <div class="value-change">USD 0.102</div>
+                                <div class="value-percent"><span class="up ">+4.01%</span> </div>
+                            </div>
+                            <div class="value" id="value-btc">
+                                <div class="value-change">USD 0.102</div>
+                                <div class="value-percent"><span class="down">-4.01%</span> </div>
+                            </div>
+                            <div class="value">
+                                <div class="value-change">USD 0.102</div>
+                                <div class="value-percent"><span class="up">+4.01%</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app">
+                        <p>Amasa is a micro income streaming investment app.</p>
+                        <div class="contract">
+                            <div class="contract_us">
+                                <p>Contract</p>
+                                <img src="asset/images/eth.png" width="16px" height="16px" alt="">
+                                <button class="btn-link">0x65...4f52</button>
+                                <button class="btn-copy"><i class="far fa-copy"></i></button>
+                            </div>
+                            <div class="coin-link">
+                                <img src="" alt="">
+                                <div><i class="fab fa-telegram-plane"></i></div>
+                                <div><i class="fab fa-telegram-plane"></i></div>
+                                <div><i class="fab fa-twitter"></i></div>
+                                <div><i class="fab fa-medium"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="detail-menu">
+                        <ul class="detail-menu_menu">
+                            <li><a href="">Overview</a></li>
+                            <li><a href="">Markets</a></li>
+                            <li><a href="">IDO</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Arbitrage</a></li>
+                            <li><a href="">Holders</a></li>
+                            <li><a href="">On-chain Activity</a></li>
+                            <li><a href="">Widgets</a></li>
+                        </ul>
+                    </div>
+                    <div class="add-price">
+                        <button><i class="fab fa-snapchat-ghost"></i> Add Price Alert</button>
+                    </div>
+                </div>
+                <section class="box">
+                    
+                        <div class="date-time">
+                            <h1 style="font-size: 1.5rem;">Amasa AMAS IDO Review</h1>
+                            <div><button>Earn tokens <i class="fas fa-chevron-down"></i></button></div>
+                        </div>
+                        <div class="ido_month">
+                            <div class="month">
+                                <h3>IDO ENDED:28 OCT - 29 OCT 2021</h3>
+                                <div>
+                                    <span>IDO PLATFORM</span>
+                                    <span><img src="asset/images/chainboost.jpg" width="16px" height="16px" alt=""> ChainBoost</span>
+                                </div>
+                            </div>
+                            <div class="ido_month_content">
+                                <div class="ido_item">
+                                    <h3 class="">IDO price</h3>
+                                    <div>$ 1.416</div>
+                                    <div>ETH 0.000379</div>
+                                    <div>SUSHI 0.120</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="ido_month">
+                            <div class="month">
+                                <h3>IDO ENDED:28 OCT - 29 OCT 2021</h3>
+                                <div>
+                                    <span>IDO PLATFORM</span>
+                                    <span><img src="" alt=""> ChainBoost</span>
+                                </div>
+                            </div>
+                            <div class="ido_month_content">
+                                <div class="ido_item">
+                                    <h3 class="">IDO price</h3>
+                                    <div>$ 1.416</div>
+                                    <div>ETH 0.000379</div>
+                                    <div>SUSHI 0.120</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        <div class="ido_month">
+                            <div class="month">
+                                <h3>IDO ENDED:28 OCT - 29 OCT 2021</h3>
+                                <div>
+                                    <span>IDO PLATFORM</span>
+                                    <span><img src="" alt=""> ChainBoost</span>
+                                </div>
+                            </div>
+                            <div class="ido_month_content">
+                                <div class="ido_item">
+                                    <h3 class="">IDO price</h3>
+                                    <div>$ 1.416</div>
+                                    <div>ETH 0.000379</div>
+                                    <div>SUSHI 0.120</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                                <div class="ido_item">
+                                    <h3 class="">ROI since IDO</h3>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                    <div>USD: 1.58x (<span>+ 58.2%</span> )</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <h3>Token economics</h3>
+                            <div class="ido_month">
+                                <div class="month">
+                                    <h3>IDO ENDED:28 OCT - 29 OCT 2021</h3>
+                                    <div>
+                                        <span>IDO PLATFORM</span>
+                                        <span><img src="" alt=""> ChainBoost</span>
+                                    </div>
+                                </div>
+                                <div class="ido_token">
+                                    <div class="ido_eco">
+                                        <div class="ido_item">
+                                            <h3 class="">Total Raised</h3>
+                                            <div>$ 1,625,000</div>
+                                        </div>
+                                        <div class="ido_item">
+                                            <h3 class="">Inital values</h3>
+                                            <div>Market cap: $ 926,000</div>
+                                            <div>FDMC: $ 16,000,000</div>
+                                            <div>Circulating Supply: AMAS 11,575,000</div>
+                                        </div>
+                                    </div>
+                                    <div class="token">
+                                        <div class="ido_item">
+                                            <h3 class="">Token allocation</h3>
+                                            <div>Total supply:	200,000,000</div>
+                                            <div>Private/Pre-sale:	41,249,972	(20.62%)</div>
+                                            <div>Public sale:	3,124,500	(1.56%)</div>
+                                        </div>
+                                        <div class="piechart">
+                                            <div id="myChart"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                </section>
+                <section>
+                    <div class="additional-link">
+                        <h3>Additional link</h3>
+                        <div class="box-link">
+                            <ul>
+                                <li><a href="">Amasa token information. </a></li>
+                                <li><a href="">Amasa IDO on TrustPad. </a></li>
+                                <li><a href="">Amasa IDO on ChainBoost. </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="similar-ico">
+                        <div class="box-ico">
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div><a href="">CryptoRank</a> > <a href="">ICO</a> > Average IEO</div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footer_content">
+            <div class="menu_content">
+                <div class="info">
+                    <div>
+                        <div class="info_name">Follow Us 
+                            <a class="arrow" href="" data-bs-toggle="collapse" data-bs-target="#follow">
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div class="info_item" id="follow">
+                            <div><a href=""><i class="fab fa-twitter"></i> Twitter</a></div>
+                            <div><a href=""><i class="fab fa-medium"></i> Medium</a></div>
+                            <div><a href=""><i class="fab fa-telegram-plane"></i> Telegram News</a></div>
+                            <div><a href=""><i class="fab fa-telegram-plane"></i> Telegram chat(en)</a></div>
+                            <div><a href="">Telegram chat(ru)</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info_name">Products
+                            <a href="" data-bs-toggle="collapse" data-bs-target="#product">
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div class="info_item" id="product">
+                            <div><a href="">IDO Platforms</a></div>
+                            <div><a href="">DEX Trade Viewer</a></div>
+                            <div><a href="">Exchanges</a></div>
+                            <div><a href="">Alerts</a></div>
+                            <div><a href="">Watchlist</a></div>
+                            <div><a href="">Converter</a></div>
+                            <div><a href="">News Aggregator</a></div>
+                            <div><a href="">Widgets</a></div>
+                            <div><a href="">Market Data API</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info_name">Analytics
+                            <a href="" data-bs-toggle="collapse" data-bs-target="#analytic">
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div class="info_item" id="analytic">
+                            <div><a href="">IDO Platform ROI</a></div>
+                            <div><a href="">IDO/IEO/ICO ROI Stats</a></div>
+                            <div><a href="">IEO ROI by Platform</a></div>
+                            <div><a href="">AVG ROI by Sector</a></div>
+                            <div><a href="">Heat Maps</a></div>
+                            <div><a href="">DerivativesIDO Platforms</a></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info_name">Contact Us
+                            <a href="" data-bs-toggle="collapse" data-bs-target="#demo">
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div class="info_item" id="demo"> 
+                            <div><a href="">List your ICO</a></div>
+                            <div><a href="">List your Token</a></div>
+                            <div><a href="">List your Exchange</a></div>
+                            <div><a href="">Other questionsIDO</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_data">
+                    <div style="margin-bottom: 1rem;" class="data">Market Data API</div>
+                    <div>
+                        <p>Your API key for all crypto use cases</p>
+                        <div>
+                            <button>Get Your API Key Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_crypto">
+                <div class="info_crypto">
+                    <div class="crypto">
+                        <h3>crypyorank</h3>
+                        <div>CryptoRank provides crowdsourced and professionally curated research, price analysis, and crypto market-moving news to help market players make more informed trading decisions. If you’re looking for a set of practical and insightful crypto market information and data, we have the analytics tools to suit your business needs.</div>
+                    </div>
+                    <div class="copyright">
+                        <div>©CryptoRank, LLC 2017-2021 | All trademarks and copyrights are the property of their respective owners</div>
+                        <div>Terms and Conditions <span> | </span>Privacy Policy <span>|</span> Sitemap</div>
+                    </div>
+                </div>
+                <p>RISK DISCLAIMER: The information contained on this website is not investment advice. Trading financial instruments carry a high level of risk and one for which we strongly advise you to consult with your registered investor advisor.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="asset/js/chart_detail.js"></script>
+    <script src="asset/js/index.js"></script>
+</body>
+</html>

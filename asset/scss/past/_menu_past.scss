@@ -1,0 +1,101 @@
+.container_fluid{
+    width:100%;
+    .main_content{
+        max-width: 1250px;
+        margin:0 auto;
+            // display: flex;
+            // justify-content: space-between;
+            .title-past{
+                margin: 0px 0px 0.4rem;
+                color: rgb(91, 102, 118);
+                
+                h3{
+                    font-weight: 400!important;
+                    font-size: 20px;
+                }
+            }
+        .menu_past{
+            >{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom:0.6em;
+                    li{
+                        margin-bottom: 12px;
+                        .item{
+                            color: rgba(0, 0, 0, 0.85);
+                            align-self: center;
+                            padding: 11px 13px;
+                            margin: 0 0.35714286em;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .filter_past{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .form{
+                display: flex;
+                #formFilter{
+                    position: relative;
+                    input {
+                        height: 32px;
+                        @include set-border;
+                        font-size: 0.857143rem;
+                    }
+                    button{
+                        position: absolute;
+                        right:10px;
+                        line-height: 32px;
+                        padding: 0!important;
+                        border: none;
+                        background: none;
+                        font-size: 0.857143rem;
+                        i{
+                            font-size: 0.857143rem;
+                            
+                        }
+                    }
+                }
+                button{
+                    font-size: 0.857143rem;
+                    height: 32px;
+                    line-height: 16px;
+                    margin-left: 5px;
+                    border-radius:5px;
+                    padding:0.3rem 1rem;
+                }
+                #filter{
+                    // width: 20%;
+                    align-items: center;
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(128, 128, 128);
+                    border: 1px solid rgb(128, 128, 128);
+                }
+                #layout{
+                    background-color: rgb(33, 133, 208) !important;
+                    color:white;
+                    border: 1px solid rgb(33, 133, 208) !important;
+                }
+            }
+            .pagination-page{
+                height:32px;
+                margin-bottom: 3px;
+                .pagination{
+                    margin-bottom: 0px;
+                    li{
+                        .disabled{
+                            color:rgba(40, 40, 40, 0.3) !important;
+                        }
+                        a{
+                            color:rgba(0,0,0,0.87);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.overview{
+    margin-top: 20px;
+    &_header{
+        position: relative;
+        display: flex;
+        .title{
+            h3{
+                color: rgb(91, 102, 118);
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 11px;
+            }
+        }
+        .search{
+            position: absolute;
+            right:0;
+            #formSearch{
+                position: relative;
+                input{
+                    width: 400px;
+                    height: 38px;
+                    @include set-border;
+                }
+                .search-btn {
+                    border: none;
+                    background: none;
+                    i{
+                        @include set-icon-search(rgb(0, 121, 251),1.5rem);
+                    }
+                }
+                
+            }
+        }
+    }
+    &_menu{
+        height:40px;
+        line-height: 40px;
+        position: relative;
+        margin-bottom: 0.6rem;
+        display: flex;
+        ul {
+            display: flex;
+            li{
+                padding:0 1rem;
+                a{
+                    color: rgba(0, 0, 0, 0.85);
+                }
+            }
+        }
+        button{
+            height:40px;
+            line-height: 40px;
+            position: absolute;
+            right:0;
+            border:1px solid $color_border_api_key;
+            border-radius: 5px;
+            background: none;
+            padding:0 1.5rem;
+        }
+    }
+    &_filter{
+        display: flex;
+       justify-content: space-between;
+        #formFilter{
+            position: relative;
+            input {
+                height: 32px;
+                @include set-border;
+                font-size: 0.857143rem;
+            }
+            button{
+                padding: 0!important;
+                border: none;
+                background: none;
+                font-size: 0.857143rem;
+                i{
+                    font-size: 0.857143rem;
+                    @include set-icon-search(black,1.2rem);
+                }
+            }
+        }
+        button{
+            font-size: 0.857143rem;
+            height: 32px;
+            line-height: 16px;
+            margin-right: 5px;
+            border-radius:5px;
+            padding:0.3rem 1rem;
+        }
+        #filter{
+            
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            color: rgb(128, 128, 128);
+            border: 1px solid rgb(128, 128, 128);
+        }
+        #layout{
+            background-color: rgb(33, 133, 208) !important;
+            color:white;
+            border: 1px solid rgb(33, 133, 208) !important;
+        }
+    }
+    .pagination-page{
+        height:32px;
+        margin-bottom: 3px;
+        .pagination{
+            margin-bottom: 0px;
+            li{
+                .disabled{
+                    color:rgba(40, 40, 40, 0.3) !important;
+                }
+                a{
+                    color:rgba(0,0,0,0.87);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+footer{
+    
+    width: 100%;
+    background-color: rgb(249, 250, 251);
+    color: rgba(0,0,0,.87);
+}
+.footer_content{
+    padding-top: 1rem;
+    @include set-content;
+    .menu_content{
+        @include display-flex;
+        padding:0 0.4rem;
+        .info{
+            @include display-flex;
+            &_name{
+                font-size: 1.2rem;
+                a{
+                    visibility: hidden;
+                    i{
+                        color:rgb(119, 136, 153)!important;
+                    }
+                }
+            }
+            div{
+                margin-bottom: 0.6rem;
+                a{
+                    color: rgb(65, 131, 196);
+                    font: {
+                        size:1.2em;
+                        weight:lighter;
+                    }
+                }
+            }
+            &_data{
+                .data{
+                    font-size: 1.2rem;
+                }
+                button{
+                    padding: 0.785714em 1.5em;
+                    background:none;
+                    border: none;
+                    white-space: nowrap;
+                    border-radius: 4px;
+                    color: rgb(65, 131, 196) !important;
+                    box-shadow: rgb(65 131 196) 0px 0px 0px 1px !important;
+                }
+            }
+        }
+
+    }
+    .footer_crypto{
+        .info_crypto{
+            // align-items: flex-end;
+            @include display-flex;
+            margin-bottom: 24px;
+            .crypto{
+                h3{
+                    color: rgb(128, 128, 128);
+                    text-transform: uppercase;
+                    font-size: 1.6em;
+                }
+                
+            }
+            .copyright{
+                font-size: 0.8em;
+                width: 20%;
+                color: rgb(57, 76, 90);
+            }
+        }
+        p{
+            font-size: 0.8em;
+        }
+    }
+}
+
+

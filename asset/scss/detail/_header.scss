@@ -1,0 +1,328 @@
+.main_content{
+    .search{
+        float: right;
+        width: 450px;
+        #formSearch{
+            position: relative;
+            input{
+                
+                height: 38px;
+                width: 100%;
+                padding: 0.3rem 2.857rem 0.3rem 0.7rem;
+                border: 1px solid rgba(34, 36, 38, 0.15);
+                margin:0 0 7px;
+                border-radius: 0.285714rem;
+            }
+            button{
+                position: absolute;
+                right: 15px;
+                line-height: 38px;
+                border:none;
+                background: none;
+                // top:10px;
+                i{
+                    color: rgb(0, 121, 251);
+                    
+                }
+
+            }
+        }
+    }
+    .title{
+        display: flex;
+        // align-items: center;
+        align-items: flex-end;
+        padding-top:7px;
+        img{
+            width: 20px;
+            height:20px;
+            margin: 4px 2px 0px;
+        }
+        .logo-zelwin{
+            margin-left:5px;
+            font-weight: 600;
+        }
+        .stake{
+            margin:0 3px;
+        }
+        .up-to{
+            a{
+                text-transform: uppercase;
+                color: rgb(65, 131, 196);
+                font-weight: 500;
+                margin-right:5px;
+            }
+        }
+    }
+    .page-content{
+        clear: both;
+        .coin-header{
+            border-radius: 0.285714rem;
+            border: 1px solid rgba(34, 36, 38, 0.15);
+            box-shadow: rgb(34 36 38 / 15%) 0px 1px 2px 0px;
+            margin-top:20px;
+            padding: 14px 14px;
+            // margin: 0px 0px 7px;
+            &_coin{
+                display: flex;
+                justify-content: space-between;
+                .coin{
+                    display: flex;
+                    align-items: center;
+                    .coin-logo{
+                        img{
+                            width: 50px;
+                            height:50px;
+                            margin-right: 1rem;
+                        }
+                    }
+                    .coin-name{
+                        .coin-info{
+                            display: flex;
+                            align-items: center;
+                            h2{
+                                font-weight: 400;
+                                font-size: 2rem;
+                                .text-amas{
+                                    color:lightslategray;
+                                    opacity: 0.7;
+                                }
+                            }
+                            .add-star{
+                                border:none;
+                                background: none;
+                                i{
+                                    font-size: 20px;
+                                    color:blue;
+                                }
+                            }
+                            .coin-watchlist{
+                                font-size: 0.85rem;
+                                padding: 2.8px 7px;
+                                color: rgb(91, 102, 118);
+                                background-color: rgba(186, 186, 223, 0.24);
+                                border-radius: 4px;
+                            }
+                        }
+                        .coin-label{
+                            max-width: 600px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            .label-token{
+                                height: min-content;
+                                margin-bottom: 0.3rem;
+                                font-size: 0.85rem;
+                                text-transform: uppercase;
+                                background-color: rgb(224, 241, 253);
+                                color: rgb(91, 102, 118);
+                                padding: 1px 5px!important;
+                                border-radius: 5px;
+                            }
+                            .label-token1{
+                                height: min-content;
+                                margin-bottom: 0.3rem;
+                                font-size: 0.85rem;
+                                text-transform: uppercase;
+                                background-color: rgba(166, 213, 166, 0.24);
+                                color: rgb(0, 128, 0);
+                                padding: 1px 5px!important;
+                                border-radius: 5px;
+                            }
+                            button{
+                                height: min-content;
+                                border:none;
+                                font-size: 0.85rem;
+                                background-color: rgba(186, 186, 223, 0.24);
+                                color: rgb(30,112,191);
+                                padding:1px 5px;
+                                text-transform: uppercase;
+                                border-radius: 5px;
+                            }
+                            .label:not(:last-child){
+                                margin-right: 0.3rem;
+                            }
+                        }
+                    }
+                }
+                
+                .coin-value{
+                    display: flex;
+                    justify-content: space-between;
+                    white-space: nowrap;
+                    // font-size: 1.6em;
+                    align-items: baseline;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    .value{
+                        &:not(:last-child){
+                            padding-right: 1rem;
+                        }
+                        &:not(:first-child){
+                            padding-left: 1rem;
+                        }
+                        &-change{
+                            font-size: 1.6em;
+                            font-weight: 350;
+                        }
+                    }
+                    
+                    #value-btc{
+                        border-left: 1px solid rgb(224, 241, 253);
+                        border-right: 1px solid rgb(224, 241, 253);
+                    }
+                }
+            }
+            .app{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                p{
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                .contract{
+                    display: flex;
+                    white-space: nowrap;
+                    .contract_us{
+                        display: flex;
+                        align-items: center;
+                        .btn-link{
+                            border:none;
+                            
+                        }
+                        .btn-copy{
+                            border:none;
+                            background: none;
+                        }
+                    }
+                }
+                .coin-link{
+                    display: flex;
+                    align-items: center;
+                    div{
+                        text-align: center;
+                        height: 27px;
+                        width: 27px;
+                        font-size: 14px;
+                        border-radius: 100%;
+                        margin: 0px 0.2rem;
+                        transition: all 0.4s ease 0s;
+                        box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 0.1em inset;
+                        i{
+                        line-height: 27px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.6rem;
+            .detail-menu{
+                &_menu{
+                    display: flex;
+                    flex-wrap: wrap;
+                    white-space: nowrap;
+                    li{
+                        margin: 0 5px;
+                        padding: 11px 13px;
+                    }
+                }
+            }
+            .add-price{
+                button{
+                    border-radius: 5px;
+                    white-space: nowrap;
+                    padding: 0.785714em 1.5em;
+                    border:none;
+                    font-size: 12px;
+                    color: rgb(255, 255, 255);
+                    background-color: rgb(65, 131, 196) !important;
+                }
+            }
+        }
+        .box{
+           
+            .date-time{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0.4em;
+                h1{
+                    color: rgb(91, 102, 118);
+                    font-size: 1.5rem;
+                }
+                button{
+                    border-radius: 5px;
+                        white-space: nowrap;
+                        padding: 0.785714em 1.5em;
+                        border:none;
+                        font-size: 12px;
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(65, 131, 196) !important;
+                }
+            }
+            .ido_month{
+                position: relative;
+                box-shadow: rgb(34 36 38 / 15%) 0px 1px 2px 0px;
+                padding: 1em;
+                margin: 0px 0px 0.5rem;
+                border-radius: 0.285714rem;
+                border: 1px solid rgba(34, 36, 38, 0.15);
+                overflow-wrap: break-word;
+                .month{
+                    display: flex;
+                    justify-content: space-between;
+                    h3,div{
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        font-size: 1.1rem;
+                    }
+                }
+                &_content{
+                    // justify-content: space-between;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .ido_item{
+                        width: 23%;
+                        margin-top: 1.2rem;
+                        h3{
+                            color: rgb(92, 127, 199);
+                            margin-bottom: 0.5rem;
+                            margin-top: 0px;
+                            font-size: 1em;
+                        }
+                    } 
+                    .piechart{
+                        width:100%;
+                        #myChart{
+                            width: 500px;
+                            height:250px;
+                        }
+                    }         
+                }
+                
+               
+            }
+        }
+        .additional-link{
+            .box-link{
+                position: relative;
+                box-shadow: rgb(34 36 38 / 15%) 0px 1px 2px 0px;
+                padding: 1em;
+                margin: 0px 0px 0.5rem;
+                border-radius: 0.285714rem;
+                border: 1px solid rgba(34, 36, 38, 0.15);
+                overflow-wrap: break-word;
+                ul{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        
+    }
+}

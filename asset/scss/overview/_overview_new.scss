@@ -1,0 +1,20 @@
+.overview-btc{
+    &_new{
+        @include set-table;
+        height:400px;
+        overflow: auto;
+        .content-new{
+            border-bottom: 1px solid rgba(34, 36, 38, 0.15);;
+            padding: 14px 10px;
+        }
+        .new_title{
+            font-size: $font-size-news;
+            font-weight: 500;
+        }
+        .date{
+            display: flex;
+            font-size: $font-size-date;
+            color: rgb(132, 150, 163);
+        }
+    }
+}

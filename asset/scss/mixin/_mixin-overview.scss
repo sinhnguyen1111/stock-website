@@ -1,0 +1,46 @@
+@mixin set-content{
+    max-width:1250px;
+    margin: auto;
+}
+@mixin display-flex(){
+    display: flex;
+    justify-content: space-between;
+}
+@mixin reset-button{
+    background: none;
+    border:none;
+}
+@mixin set-table{
+    border-right:1px solid rgba(34, 36, 38, 0.15);
+    border-left:1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 5px;
+    box-shadow: rgb(34 36 38 / 15%) 0px 1px 2px 0px;
+}
+@mixin set-table-tr-first{
+    background-color: rgb(249, 250, 251);
+    box-shadow: rgb(34 36 38 / 15%) 0px 1px 2px 0px;
+}
+@mixin set-table-th{
+    color: rgb(57, 76, 90);
+    font-size: 1em;
+    padding: 0.4em 0.785714em;
+    font-weight: 500!important;
+    white-space: nowrap;
+}
+@mixin set-tabel-tr{
+    content: "";
+    display: table-cell;
+    width: 10px;
+}
+@mixin set-border{
+    border-color: $color_border !important;
+    border-radius: 5px;
+    color: $color_text_border !important;
+    padding-left: 0.4rem;
+}
+@mixin set-icon-search($color,$right){
+    position: absolute;
+    right:$right;
+    top: 0.7rem;
+    color: $color;
+}

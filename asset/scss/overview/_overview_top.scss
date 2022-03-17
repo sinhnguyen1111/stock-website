@@ -1,0 +1,42 @@
+.overview_table{
+    
+    .table-responsive{
+        border-radius: 5px;
+    }
+    .table{
+        white-space: nowrap;
+        // @include set-table;
+        tr:first-child{
+            @include set-table-tr-first;
+            th{
+                @include set-table-th;
+                &:first-child{
+                    text-align: left;
+                }
+            }
+        } 
+        tr::before,tr::after{
+            @include set-tabel-tr;
+        }   
+    }
+    &_top{
+        .table{
+            @include set-table;
+            white-space: nowrap;
+            width: 49%;
+            float:left;
+            tr:first-child{
+                @include set-table-tr-first;
+            }
+            tr::before,tr::after{
+                @include set-tabel-tr;
+            }
+        }
+        #gainers{
+            margin-right: 0.4rem;
+        }
+        #losers{
+            margin-left: 0.4rem;
+        }
+    }
+}
